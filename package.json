@@ -1,0 +1,30 @@
+{
+  "name": "emily",
+  "version": "1.0.0",
+  "main": "app.js",
+  "repository": "https://github.com/dawe484/emily",
+  "author": "David Krénar",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "artyom.js": "^1.0.5",
+    "colors": "^1.1.2",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0",
+    "helmet": "^3.5.0",
+    "mongoose": "^4.8.6",
+    "morgan": "^1.8.1",
+    "path": "^0.12.7",
+    "serve-favicon": "^2.4.1",
+    "socket.io": "^2.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "gulp": "^3.9.1",
+    "watchify": "^3.9.0"
+  },
+  "scripts": {
+    "build": "browserify public/js/communication.js -o public/js/bundle.js",
+    "watch": "watchify public/js/communication.js -o public/js/bundle.js"
+  },
+  "homepage": "https://github.com/dawe484/emily#readme"
+}
